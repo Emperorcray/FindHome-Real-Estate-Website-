@@ -104,10 +104,12 @@ a{
         width: 100%;
         border: 1px solid;
     }
+    /* This styles the main section container */
     .main_section{
         height: 600px;
         width: 100%;
     }
+    /* This styles the main image in the main section */
     .main_image{
         height: 550px;
         width: 90vw;
@@ -118,10 +120,12 @@ a{
         box-shadow: 0px 0px 15px 0px grey;
         place-content: center;
     }
+    /* This styles the main image on hover */
     .main_image:hover{
         transition-duration: 0.5s;
         background-size: 110%;
     }
+    /* This styles the main title in the main section */
     .main_title{
         font-size: 50px;
         font-weight: 700;
@@ -129,10 +133,12 @@ a{
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    /* This styles the main description in the main section */
     .search_bar{
         height: 100px;
         width: 40vw;
     }
+    /* This styles the search bar input field */
     .search_bar>input{
         height: 46px;
         width: 30vw;
@@ -140,7 +146,104 @@ a{
         outline: none;
         text-indent: 20px;
     }
+    /* This styles the search bar input field on focus */
     .search_bar>input:focus{
         border: 3px solid skyblue;
+    }
+    /* This styles the search bar button */
+    .listings_container{
+        height: 400px;
+        width: 100%;
+        border: 1px solid;
+    }
+    /* This styles the filters container */
+    .filters{
+        height: 80px;
+        width: 60vw;
+        border: 1px solid;
+    }
+    /* This styles the individual filter buttons and their containers */
+    .add_price,.building_type,.bedrooms,.availability{
+        position: relative;
+        display: inline-block;
+    }
+    /* This styles the individual filter buttons */
+    .add_price>button,.building_type>button,.bedrooms>button,.availability>button{
+        height: 40px;
+        width: 12vw;
+        border: 1px solid #d3d3d3;
+        background-color: white;
+        font-weight: 600;
+    }
+    /* This styles the individual filter buttons on hover */
+    .add_price>button:hover,.building_type>button:hover,.bedrooms>button:hover,.availability>button:hover{
+        transition-duration: 0.5s;
+        background-color: #d3d3d3;
+    }
+    /* This styles the dropdown menus for each filter button */
+    .price_range{
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        height: 100px;
+        width: 18vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    /* This styles the dropdown menus for each filter button */
+    .building_type_range{
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        height: 100px;
+        width: 18vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    /* This styles the dropdown menus for each filter button */
+    .bedrooms_range{
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        height: 100px;
+        width: 18vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    /* This styles the dropdown menus for each filter button */
+    .availability_range{
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        height: 100px;
+        width: 18vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .building_type_range>p,.bedrooms_range>p,.price_range>p,.availability_range>p{
+        color: gray;
+        padding-left: 10px;
+    }
+    /* This styles the individual options in the dropdown menus */
+    .add_price:hover .price_range,.building_type:hover .building_type_range,.bedrooms:hover .bedrooms_range,.availability:hover .availability_range{
+        display: block;
+        transition-duration: 0.5s;
+    }
+    .price_range>label{
+        border: 1px solid;
+    }
+    #price{
+        height: 40px;
+        width: 14vw;
+        background-color: white;
+        border: 1px solid #d3d3d3;
+        text-indent:2px;
+    }
+    #price:focus{
+        outline: 2px solid skyblue;
+        border: 1px solid #d3d3d3;
+    }
+    #price>option{
+        padding-left: 10px;
     }
 }
