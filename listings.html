@@ -60,14 +60,26 @@
                         <p>Price range</p>
                         <!-- Price range dropdown -->
                         <label for="price" class="d-flex justify-content-evenly align-items-center flex-wrap">
+                            <!-- Price range dropdown -->
                             <select name="price" id="price" class="rounded-3">
                                 <option value="">No Price</option>
-                                <option value="100000">$100,000</option>
-                                <option value="200000">$200,000</option>
-                                <option value="300000">$300,000</option>
-                                <option value="400000">$400,000</option>
-                                <option value="500000">$500,000</option>
-                                <option value="600000">$600,000</option>
+                                <option value="">$500 to $1,000</option>
+                                <option value="">$1,000 to $2,000</option>
+                                <option value="">$2,000 to $3,000</option>
+                                <option value="">$3,000 to $4,000</option>
+                                <option value="">$4,000 to $5,000</option>
+                                <option value="">$5,000 to $10,000</option>
+                                <option value="">$10,000 to $20,000</option>
+                                <option value="">$20,000 to $30,000</option>
+                                <option value="">$30,000 to $40,000</option>
+                                <option value="">$40,000 to $50,000</option>
+                                <option value="">$50,000 to $100,000</option>
+                                <option value="100000">$100,000 to $200,000</option>
+                                <option value="200000">$200,000 to $300,000</option>
+                                <option value="300000">$300,000 to $400,000</option>
+                                <option value="400000">$400,000 to $500,000</option>
+                                <option value="500000">$500,000 to $1,000,000</option>
+                                <option value="1000000">$1,000,000 and above</option>
                             </select>
                         </label>
                     </div>
@@ -78,7 +90,17 @@
                     <button class="rounded-3">Building Type <i class="fi fi-rs-angle-small-down"></i></button>
                     <!-- Filter dropdown and it`s content-->
                     <div class="building_type_range rounded-3">
+                        <!-- This is the dropdown menu for the building type filter button -->
                         <p>Building type range</p>
+                        <!-- Building type dropdown -->
+                        <label for="bungalow">
+                            <input type="checkbox" name="bungalow" id="bungalow" class="rounded-3">
+                            Bungalow <br>
+                            <input type="checkbox" name="Duplex" id="Duplex" class="rounded-3">
+                            Duplex <br>
+                            <input type="checkbox" name="Apartment" id="Apartment" class="rounded-3">
+                            Apartment <br>
+                        </label>
                     </div>
                 </div>
                 <!-- Filter buttons containers-->
@@ -87,7 +109,33 @@
                     <button class="rounded-3">Bedrooms <i class="fi fi-rs-angle-small-down"></i></button>
                     <!-- Filter dropdown and it`s content-->
                     <div class="bedrooms_range rounded-3">
+                        <!-- This is the dropdown menu for the bedrooms filter button -->
                         <p>Bedrooms range</p>
+                        <label for="">
+                            <input type="checkbox">
+                            1 beds <br>
+                            <input type="checkbox">
+                            2 beds <br>
+                            <input type="checkbox">
+                            3 beds <br>
+                            <input type="checkbox">
+                            4 beds <br>
+                            <input type="checkbox">
+                            5 beds <br>
+                        </label>
+                        <p> Bathrooms </p>
+                        <label for="">
+                            <input type="checkbox">
+                            1 baths <br>
+                            <input type="checkbox">
+                            2 baths <br>
+                            <input type="checkbox">
+                            3 baths <br>
+                            <input type="checkbox">
+                            4 baths <br>
+                            <input type="checkbox">
+                            5 baths <br>
+                        </label>
                     </div>
                 </div>
                 <!-- Filter buttons containers-->
@@ -96,7 +144,16 @@
                     <button class="rounded-3">Availability <i class="fi fi-rs-angle-small-down"></i></button>
                     <!-- Filter dropdown and it`s content-->
                     <div class="availability_range rounded-3">
+                        <!-- This is the dropdown menu for the availability filter button -->
                         <p>Availability range</p>
+                        <label for="">
+                            <input type="checkbox">
+                            For sale <br>
+                            <input type="checkbox">
+                            For rent <br>
+                            <input type="checkbox">
+                            For lease <br>
+                        </label>
                     </div>
                 </div>
             </div>
